@@ -1,6 +1,8 @@
-const Button = ({ nextPage, label, type, className }) => {
+import css from './styles.module.css';
+
+const Button = ({ nextPage, label, type }) => {
   return (
-    <button type={type} className={className} onClick={nextPage}>
+    <button className={css.LoadMore} type={type} onClick={nextPage}>
       {label}
     </button>
   );

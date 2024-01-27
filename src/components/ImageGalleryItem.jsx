@@ -13,9 +13,14 @@ const ImageGalleryItem = ({ onClick, src, description }) => {
   }, [src]);
 
   return (
-    <li className={css.gallery_item} onClick={() => onClick(src)}>
+    <li className={css.ImageGalleryItem} onClick={() => onClick(src)}>
       {imageLoader}
-      <img loading="lazy" src={src} alt={description} />
+      <img
+        className={css.ImageGalleryItem_image}
+        loading="lazy"
+        src={src}
+        alt={description}
+      />
     </li>
   );
 };

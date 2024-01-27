@@ -5,7 +5,7 @@ import ImageGallery from 'components/ImageGallery';
 import ImageGalleryItem from 'components/ImageGalleryItem';
 import Loader from 'components/Loader';
 import Modal from 'components/Modal';
-import { React } from 'react';
+import React from 'react';
 
 class App extends React.Component {
   constructor(props) {

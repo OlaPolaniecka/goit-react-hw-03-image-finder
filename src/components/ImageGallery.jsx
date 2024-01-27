@@ -1,7 +1,9 @@
+import css from './styles.module.css';
+
 const ImageGallery = ({ children }) => {
   return (
     <>
-      <ul className="gallery">{children}</ul>
+      <ul className={css.ImageGallery}>{children}</ul>
     </>
   );
 };
