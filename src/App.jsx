@@ -116,13 +116,7 @@ class App extends React.Component {
             label="Load more"
           />
         )}
-        {isModalOpen && (
-          <Modal
-            imageURL={selectedImage}
-            closeModal={this.toggleModal}
-            onClick={this.toggleModal}
-          />
-        )}
+        {isModalOpen && <Modal imageURL={selectedImage} />}
       </>
     );
   }
